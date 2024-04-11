@@ -1,0 +1,167 @@
+Pc2@DESKTOP-BSEBVTT MINGW64 ~/Desktop/SI_2024_lab1_203220 (bug2)
+$ git log
+commit 5033102325ff721f62066ddf72081840ff232e46 (HEAD -> bug2, origin/bug2)
+Merge: 8cac556 76a012c
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 09:47:21 2024 +0200
+
+    Fix method calls in main class
+
+commit 8cac556f8ba287d3777f9495c083c68b013e25ae (origin/master, master)
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 08:36:15 2024 +0200
+
+    Call method makeBigStringFrom in main class
+
+commit 60d6624184754928845740c69f529e750ae54246
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 08:23:58 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom
+
+commit 76a012c95bd46e3147793c63c58f9fdf7443fbf1
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 08:36:15 2024 +0200
+
+    Call method makeBigStringFrom in main class
+
+commit 0f4f95b7b6d1bb631cd93744e88801bcb5cd7522 (origin/bug1, bug1)
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 08:26:58 2024 +0200
+
+    Call method filterOddLengthStrings in main class
+
+commit cf2ac672307f50e2d2a8d24519471695ca447925
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 08:23:58 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom
+
+commit 25d419c999d97ae44bb479dddc98ab94e3540dbe
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 08:20:00 2024 +0200
+
+    Call method filterOddLengthStrings in main class
+
+commit 897b94257a537e105e2e38eec07069a71df8c394
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 08:04:17 2024 +0200
+
+    Add starter code
+
+commit 7036b47c4ab3ea6731d49f66c8981b0a6678e181
+Author: Filip <filipgjosevski7@gmail.com>
+:
+commit 5033102325ff721f62066ddf72081840ff232e46 (HEAD -> bug2, origin/bug2)
+Merge: 8cac556 76a012c
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 09:47:21 2024 +0200
+
+    Fix method calls in main class
+
+commit 8cac556f8ba287d3777f9495c083c68b013e25ae (origin/master, master)
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 08:36:15 2024 +0200
+
+    Call method makeBigStringFrom in main class
+
+commit 60d6624184754928845740c69f529e750ae54246
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 08:23:58 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom
+
+commit 76a012c95bd46e3147793c63c58f9fdf7443fbf1
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 08:36:15 2024 +0200
+
+    Call method makeBigStringFrom in main class
+
+commit 0f4f95b7b6d1bb631cd93744e88801bcb5cd7522 (origin/bug1, bug1)
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 08:26:58 2024 +0200
+
+    Call method filterOddLengthStrings in main class
+
+commit cf2ac672307f50e2d2a8d24519471695ca447925
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 08:23:58 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom
+
+commit 25d419c999d97ae44bb479dddc98ab94e3540dbe
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 08:20:00 2024 +0200
+
+    Call method filterOddLengthStrings in main class
+
+commit 897b94257a537e105e2e38eec07069a71df8c394
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 08:04:17 2024 +0200
+
+    Add starter code
+
+commit 7036b47c4ab3ea6731d49f66c8981b0a6678e181
+Author: Filip <filipgjosevski7@gmail.com>
+:
+commit 5033102325ff721f62066ddf72081840ff232e46 (HEAD -> bug2, origin/bug2)
+Merge: 8cac556 76a012c
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 09:47:21 2024 +0200
+
+    Fix method calls in main class
+
+commit 8cac556f8ba287d3777f9495c083c68b013e25ae (origin/master, master)
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 08:36:15 2024 +0200
+
+    Call method makeBigStringFrom in main class
+
+commit 60d6624184754928845740c69f529e750ae54246
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 08:23:58 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom
+
+commit 76a012c95bd46e3147793c63c58f9fdf7443fbf1
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 08:36:15 2024 +0200
+
+    Call method makeBigStringFrom in main class
+
+commit 0f4f95b7b6d1bb631cd93744e88801bcb5cd7522 (origin/bug1, bug1)
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 08:26:58 2024 +0200
+
+    Call method filterOddLengthStrings in main class
+
+commit cf2ac672307f50e2d2a8d24519471695ca447925
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 08:23:58 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom
+
+commit 25d419c999d97ae44bb479dddc98ab94e3540dbe
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 08:20:00 2024 +0200
+
+    Call method filterOddLengthStrings in main class
+
+commit 897b94257a537e105e2e38eec07069a71df8c394
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 08:04:17 2024 +0200
+
+    Add starter code
+
+commit 7036b47c4ab3ea6731d49f66c8981b0a6678e181
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 08:02:13 2024 +0200
+
+    Add starter code
+
+commit dcd3f9a49d4d2f7c8085153dc41e0189e139f719
+Author: Filip <filipgjosevski7@gmail.com>
+Date:   Thu Apr 11 07:58:11 2024 +0200
+
+    Initial commit
+(END)

@@ -1,0 +1,188 @@
+----------Филип Ѓошевски 203220----------------
+1.Креирав профил на GitHub
+2.Го променив името на гранката во master 
+3.Креирав репозиториум и го направив приватен
+4.Потоа во терминал креирав директориум со наредбата mkdir SI_2024_lab1_INDEX
+и со cd SI_2024_lab1_INDEX влегов во директориумот каде ќе се извршуваат следните команди
+и го иницијализирав со наредбата git init.
+5.Го поврзав мојот локален репозиториум со оддалечениот репозиториум на GitHub 
+со командата git remote add origin https://github.com/gjosevskifilip/SI_2024_lab1_203220.git
+6.Креирав README.md датотека и во неа ги внесов моите податоци, потоа со git add README.md 
+ја додадов во директориумот, и со git commit -m "Initial commit" ја комитнав.
+7.Потоа ги превземав 3те фајла и со git add . ги додадов и ги комитнав со git commit -m "Add starter code"
+8.Потоа со наредбата git pull origin master ги синхронизирав сите гранки со оддалечениот репозиториум
+9.Потоа отворив две нови гранки со наредбите git checkout -b bug1
+git checkout -b bug2, тие се разгранија од master гранката
+10.Се префрлив на гранката bug1 со git checkout bug1
+11.Откако се префрлив ми се отвори IntelliJ, отидов на првиот фајл SILab1_1.java и ги направив следниве промени:
+Пред import java.util.ArrayList;
+import java.util.List;
+
+public class SILab1_1 {
+    public static List<String> filterOddLengthStrings(List<String> list) {
+        List<String> result = new ArrayList<>();
+        for (String el : list) {
+            if (el.length() % 2 == 0) {
+                result.add(el);
+            }
+        }
+        return result;
+    }
+
+
+}
+Потоа 
+import java.util.ArrayList;
+import java.util.List;
+
+public class SILab1_1 {
+    public static List<String> filterOddLengthStrings(List<String> list) {
+        List<String> result = new ArrayList<>();
+        for (String el : list) {
+            if (el.length() % 2 != 0) {
+                result.add(el);
+            }
+        }
+        return result;
+    }
+
+
+}
+
+Ја поправив грешката и ја извршив наредбата git add SILab1_1.java за да се додадат промените
+а потоа ги комитнав промените со наредбата и порака git commit -m "Fix wrong condition in filterOddLengthStrings"
+12.Се префрлив на гранката bug2 со наредбата git checkout bug2
+13.Ја поправив грешката во методот makeBigStringFrom, вака изгледаше пред if (el.length() < minLength) { 
+и потоа if (el.length() >= minLength) {
+потоа направив git add SILab1_2.java за да ги додадам промените и ги комитнав со пораката git commit -m "Fix wrong condition in makeBigStringFrom"
+14.Се вратив потоа на гранката bug1 со наредбата git checkout bug1
+15.И во класата SILab1Main после for циклусот во 16ти ред додадов System.out.println(SILab1_1.filterOddLengthStrings(list));
+и ги извршив соодветниве команди за да додадам и комитнам промени со порака 
+git add SILab1Main.java
+git commit -m "Call method filterOddLengthStrings in main class"
+16.Потоа со наредбата git checkout bug2 се вратив на гранката.
+17.И во класата SILab1Main во 16та линија го додадов следново System.out.println(SILab1_2.makeBigStringFrom(list));
+и ги извришив следниве команди со цел да се додаде и комитне промената 
+git add SILab1Main.java
+git commit -m "Call method makeBigStringFrom in main class"
+18.Потоа ги синхронизирав гранките со репозиториумот на GitHub со командите 
+git push origin bug1
+git push origin bug2
+19.Потоа со наредбата checkout master се префрлив на master гранката
+20.Со наредбата git merge bug1 ја споив гранката bug1 кон master.
+   И го добив ова 
+Pc2@DESKTOP-BSEBVTT MINGW64 ~/Desktop/SI_2024_lab1_203220 (master)
+$ git merge bug1
+Updating 897b942..0f4f95b
+Fast-forward
+ SILab1Main.java | 1 +
+ SILab1_1.java   | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+Оваа порака означува дека спојувањето на гранката bug1 со гранката master е извршено успешно. 
+Fast-forward значи дека Git можел да ја премести master гранката на напред за да се спои со bug1 
+бидејќи master гранката нема директни промени што не се веќе дел од bug1.
+21.И потоа со наредбата git pull origin master ги синхронизирав сите гранки со оддалечениот репозиториум
+22.Потоа со наредбата git checkout bug2 сакав да се префрлам на bug2 гранката 
+но настана проблем каде што го добив следново 
+Pc2@DESKTOP-BSEBVTT MINGW64 ~/Desktop/SI_2024_lab1_203220 (master)
+$ git checkout bug2
+error: The following untracked working tree files would be overwritten by checkout:
+        .idea/misc.xml
+Please move or remove them before you switch branches.
+Aborting
+и со наредбата 
+rm .idea/misc.xml
+ја избришав датотеката со цел успешно префрлување на bug2 
+23.Кога направив rebase спрема гранката master со наредбата git rebase master, 
+се случи конфликт 
+User
+Pc2@DESKTOP-BSEBVTT MINGW64 ~/Desktop/SI_2024_lab1_203220 (bug2)
+$ git rebase master
+Auto-merging SILab1Main.java
+CONFLICT (content): Merge conflict in SILab1Main.java
+error: could not apply 76a012c... Call method makeBigStringFrom in main class
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 76a012c... Call method makeBigStringFrom in main class
+Потоа отворив InteLLij и 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class SILab1Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        List<String> list = new ArrayList<>();
+
+        for (int i = 0; i < n; i++) {
+            list.add(sc.next());
+        }
+<<<<<<< HEAD
+        System.out.println(SILab1_1.filterOddLengthStrings(list));
+    }
+=======
+    } System.out.println(SILab1_2.makeBigStringFrom(list));
+>>>>>>> 76a012c (Call method makeBigStringFrom in main class)
+}
+Ги избришав
+<<<<<<< HEAD
+=======
+>>>>>>> линиите каде што настана конфликтот со цел да го решам истиот 
+
+и откако ги решив истите ја извршив командата git add SILab1Main.java за да ги додадам промените 
+потоа ја извршив командата git rebase --continue со цел да продолжи rebase. Ако има повеќе конфликти 
+да се повтори овој процес за секој конфликт.
+24.Потоа се префрлив на гранката master со наредбата git checkout master 
+25.Потоа напраив merge на гранката bug2 со master 
+$ git merge bug2
+Updating 0f4f95b..8cac556
+Fast-forward
+ .idea/.gitignore        |  8 ++++++++
+ .idea/misc.xml          |  6 ++++++
+ .idea/modules.xml       |  8 ++++++++
+ .idea/vcs.xml           |  6 ++++++
+ SILab1Main.java         |  4 ++++
+ SILab1_2.java           |  2 +-
+ SI_2024_lab1_203220.iml | 11 +++++++++++
+ 7 files changed, 44 insertions(+), 1 deletion(-)
+ create mode 100644 .idea/.gitignore
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 SI_2024_lab1_203220.iml
+26.И потоа ги синхронизирав сите гранки со оддалечениот репозиториум 
+со наредбата git push origin --all
+27.Ги синхронизирав сите гранки и со --force
+
+Pc2@DESKTOP-BSEBVTT MINGW64 ~/Desktop/SI_2024_lab1_203220 (bug2)
+$ git push origin bug2 --force
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 347 bytes | 347.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/gjosevskifilip/SI_2024_lab1_203220.git
+   76a012c..5033102  bug2 -> bug2
+
+28.Потоа ја додадов датотеката logs.txt и 203220.txt
+ги извршив командите за додавање и комитирање 
+git add logs.txt INDEX.txt
+git commit -m "Final commit"
+29.И ги синхронизирав сите гранки со командата 
+git push origin --all
+
+
+
+
+
+
+
+ 
+
